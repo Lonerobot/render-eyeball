@@ -1,0 +1,9 @@
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Adjust based on tile size */
+  gap: 10px; /* Adjust spacing between tiles */
+  width: 90vw; /* 90% of the viewport width */
+  max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  margin: 0 auto; /* Center the grid on the page */
+  box-sizing: border-box; /* Make padding and width play nicely */
+}

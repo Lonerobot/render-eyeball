@@ -1,0 +1,290 @@
+[
+    {
+        "Computer Name": "TL-PC01",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "AMD Ryzen 7 1700X Eight-Core",
+            "gpu": "Radeon RX 580 Series"
+        }
+    },
+    {
+        "Computer Name": "TL-PC02",
+        "Hardware": {
+            "ram": 32768,
+            "cpu": "AMD Ryzen 5 1600 Six-Core",
+            "gpu": "Radeon RX 560 Series"
+        }
+    },
+    {
+        "Computer Name": "TL-PC03",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "AMD Ryzen 7 1700 Eight-Core",
+            "gpu": "Radeon RX 580 Series"
+        }
+    },
+    {
+        "Computer Name": "TL-PC06",
+        "Hardware": {
+            "ram": 49152,
+            "cpu": "AMD Ryzen 5 1600 Six-Core",
+            "gpu": "Radeon RX 560 Series"
+        }
+    },
+    {
+        "Computer Name": "TL-PC08",
+        "Hardware": {
+            "ram": 32768,
+            "cpu": "AMD Ryzen 5 1600 Six-Core",
+            "gpu": "ASUS Radeon RX 560 Series"
+        }
+    },
+    {
+        "Computer Name": "TL-PC09",
+        "Hardware": {
+            "ram": 32768,
+            "cpu": "AMD Ryzen 7 1700 Eight-Core",
+            "gpu": "Radeon RX 580 Series"
+        }
+    },
+    {
+        "Computer Name": "TL-PC12",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz",
+            "gpu": "NVIDIA Quadro RTX 4000"
+        }
+    },
+    {
+        "Computer Name": "TL-PC13",
+        "Hardware": {
+            "ram": 32768,
+            "cpu": "AMD Ryzen 5 2600 Six-Core",
+            "gpu": "NVIDIA GeForce RTX 3060"
+        }
+    },
+    {
+        "Computer Name": "TL-PC14",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz",
+            "gpu": "NVIDIA Quadro RTX 4000"
+        }
+    },
+    {
+        "Computer Name": "TL-PC15",
+        "Hardware": {
+            "ram": 32768,
+            "cpu": "Intel(R) Core(TM) i3-9100F CPU @ 3.60GHz",
+            "gpu": "NVIDIA Quadro P400"
+        }
+    },
+    {
+        "Computer Name": "TL-PC16",
+        "Hardware": {
+            "ram": 32768,
+            "cpu": "AMD Ryzen 9 3950X 16-Core",
+            "gpu": "NVIDIA GeForce RTX 3070"
+        }
+    },
+    {
+        "Computer Name": "TL-PC17",
+        "Hardware": {
+            "ram": 32768,
+            "cpu": "AMD Ryzen 9 3950X 16-Core",
+            "gpu": "NVIDIA GeForce RTX 3070"
+        }
+    },
+    {
+        "Computer Name": "TL-PC18",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "AMD Ryzen 9 3900X 12-Core",
+            "gpu": "NVIDIA GeForce RTX 3070"
+        }
+    },
+    {
+        "Computer Name": "TL-PC19",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "AMD Ryzen 9 3900X 12-Core",
+            "gpu": "NVIDIA GeForce RTX 3070"
+        }
+    },
+    {
+        "Computer Name": "TL-PC20",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "AMD Ryzen 9 5950X 16-Core",
+            "gpu": "NVIDIA GeForce RTX 3080 Ti"
+        }
+    },
+    {
+        "Computer Name": "TL-PC21",
+        "Hardware": {
+            "ram": 131072,
+            "cpu": "AMD Ryzen 9 5950X 16-Core",
+            "gpu": "NVIDIA GeForce RTX 3070"
+        }
+    },
+    {
+        "Computer Name": "TL-PC22",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "AMD Ryzen 9 5950X 16-Core",
+            "gpu": "NVIDIA GeForce RTX 3070"
+        }
+    },
+    {
+        "Computer Name": "TL-PC23",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "AMD Ryzen 9 5950X 16-Core",
+            "gpu": "NVIDIA GeForce RTX 3070"
+        }
+    },
+    {
+        "Computer Name": "TL-PC24",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "AMD Ryzen 9 5950X 16-Core",
+            "gpu": "NVIDIA GeForce RTX 3070 Ti"
+        }
+    },
+    {
+        "Computer Name": "TL-PC25",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "AMD Ryzen 9 5950X 16-Core",
+            "gpu": "NVIDIA GeForce RTX 3070 Ti"
+        }
+    },
+    {
+        "Computer Name": "TL-PC26",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "AMD Ryzen 9 5950X 16-Core",
+            "gpu": "NVIDIA GeForce RTX 3070 Ti"
+        }
+    },
+    {
+        "Computer Name": "TL-PC27",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "AMD Ryzen 9 5950X 16-Core",
+            "gpu": "NVIDIA GeForce RTX 3070 Ti"
+        }
+    },
+    {
+        "Computer Name": "TL-PC28",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "12th Gen Intel(R) Core(TM) i9-12900K",
+            "gpu": "NVIDIA GeForce RTX 3070"
+        }
+    },
+    {
+        "Computer Name": "TL-PC29",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "12th Gen Intel(R) Core(TM) i9-12900K",
+            "gpu": "NVIDIA GeForce RTX 3070"
+        }
+    },
+    {
+        "Computer Name": "TL-PC30",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "12th Gen Intel(R) Core(TM) i9-12900K",
+            "gpu": "NVIDIA GeForce RTX 3070"
+        }
+    },
+    {
+        "Computer Name": "TL-PC31",
+        "Hardware": {
+            "ram": 65536,
+            "cpu": "12th Gen Intel(R) Core(TM) i9-12900K",
+            "gpu": "Intel(R) UHD Graphics 770"
+        }
+    },
+    {
+        "Computer Name": "TL-PC32",
+        "Hardware": {
+            "gpu": "NVIDIA GeForce RTX 3070",
+            "ram": 65536,
+            "cpu": "12th Gen Intel(R) Core(TM) i9-12900K"
+        }
+    },
+    {
+        "Computer Name": "TL-PC33",
+        "Hardware": {
+            "gpu": "NVIDIA GeForce GTX 1070 Ti",
+            "ram": 65536,
+            "cpu": "AMD Ryzen Threadripper 1950X 16-Core"
+        }
+    },
+    {
+        "Computer Name": "TL-PC34",
+        "Hardware": {
+            "gpu": "NVIDIA GeForce RTX 3070",
+            "ram": 65536,
+            "cpu": "12th Gen Intel(R) Core(TM) i9-12900K"
+        }
+    },
+    {
+        "Computer Name": "TL-PC35",
+        "Hardware": {
+            "gpu": "NVIDIA GeForce RTX 3070",
+            "ram": 65536,
+            "cpu": "12th Gen Intel(R) Core(TM) i9-12900K"
+        }
+    },
+    {
+        "Computer Name": "TL-PC36",
+        "Hardware": {
+            "gpu": "NVIDIA GeForce RTX 3070",
+            "ram": 65536,
+            "cpu": "12th Gen Intel(R) Core(TM) i9-12900K"
+        }
+    },
+    {
+        "Computer Name": "TL-PC37",
+        "Hardware": {
+            "gpu": "NVIDIA GeForce RTX 4070",
+            "ram": 131072,
+            "cpu": "13th Gen Intel(R) Core(TM) i7-13700K"
+        }
+    },
+    {
+        "Computer Name": "TL-PC38",
+        "Hardware": {
+            "gpu": "NVIDIA GeForce RTX 4070",
+            "ram": 131072,
+            "cpu": "13th Gen Intel(R) Core(TM) i7-13700K"
+        }
+    },
+    {
+        "Computer Name": "TL-PC39",
+        "Hardware": {
+            "gpu": "NVIDIA GeForce RTX 4070",
+            "ram": 131072,
+            "cpu": "13th Gen Intel(R) Core(TM) i7-13700K"
+        }
+    },
+    {
+        "Computer Name": "TL-PC40",
+        "Hardware": {
+            "gpu": "NVIDIA GeForce RTX 4070",
+            "ram": 131072,
+            "cpu": "Intel(R) Core(TM) i9-14900KF"
+        }
+    },
+    {
+        "Computer Name": "WEBPUB",
+        "Hardware": {
+            "gpu": "NVIDIA GeForce GTX 1650",
+            "ram": 131072,
+            "cpu": "AMD Ryzen 9 7950X 16-Core"
+        }
+    }
+]

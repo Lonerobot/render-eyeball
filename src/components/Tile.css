@@ -1,0 +1,46 @@
+.tile {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    color: rgb(27, 27, 27);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    /* max-width: 300px;
+    max-height: 200px; */
+  }
+  
+  .tile.free {
+    background-color:#009900;
+    color:#333333
+  }
+  
+  .tile.occupied {
+    background-color:#CCCC33;
+    color:#333333
+  }
+  
+  .tile:disabled {
+    cursor: not-allowed;
+    opacity: 0.85;
+  }
+
+  .icon-main {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+  }
+
+  .div-layout-side {
+    display: flex;    
+    gap: 10px; 
+    align-items: center;
+    padding-bottom: 8px;
+  }
+
+  .div-layout-flow {
+    display: flex;   
+    gap: 10px;   
+    padding-top: 8px;
+  }
+  
+  
