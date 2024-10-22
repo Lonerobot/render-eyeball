@@ -1,8 +1,8 @@
 .tile {
-    padding: 8px;
+    padding: 10px;
     border: none;
-    border-radius: 8px;
-    color: rgb(27, 27, 27);
+    border-radius: 10px;
+    color: rgb(27, 27, 27); 
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
@@ -12,12 +12,12 @@
   
   .tile.free {
     background-color:#009900;
-    color:#333333
+    color:#333333;
   }
   
   .tile.occupied {
     background-color:#CCCC33;
-    color:#333333
+    color:#333333;
   }
   
   .tile:disabled {

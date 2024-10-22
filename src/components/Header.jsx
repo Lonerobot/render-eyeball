@@ -10,10 +10,10 @@ import { collection, doc, updateDoc, onSnapshot } from 'firebase/firestore';
 const HeaderContainer = styled.div`
   display: flex;
   align-items: center; /* Vertically aligns the logo and text */
+  gap: 12px;
 `;
 
 const Header = ({ mode, setMode }) => {
-
   return (
     <div>
       <HeaderContainer >
@@ -34,10 +34,7 @@ const Header = ({ mode, setMode }) => {
         >
           Edit Mode
         </button>
-
-
       </div>
-
     </div>
   );
 };

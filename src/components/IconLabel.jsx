@@ -29,8 +29,8 @@ if ( type === "ram" ) {
 
 return (
     <div className="icon-label">
-    <span className="icon">{icon}</span>
-    <span className="label">{`${label}: ${data}`}</span>
+      <span className="icon">{icon}</span>
+      <span className="label">{`${label}: ${data}`}</span>
     </div>
 );
 };
