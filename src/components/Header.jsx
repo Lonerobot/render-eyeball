@@ -3,8 +3,8 @@ import ImageComponent from './ImageComponent';
 import Logo from '../assets/eyeball.png'
 import styled from 'styled-components';
 
-import { db } from '../firebase';
-import { collection, doc, updateDoc, onSnapshot } from 'firebase/firestore';
+// import { db } from '../firebase';
+// import { collection, doc, updateDoc, onSnapshot } from 'firebase/firestore';
 
 // Styled component for the container div, using Flexbox to align items horizontally
 const HeaderContainer = styled.div`
