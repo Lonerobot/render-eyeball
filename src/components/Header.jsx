@@ -3,25 +3,13 @@ import ImageComponent from './ImageComponent';
 import Logo from '../assets/eyeball.png'
 import styled from 'styled-components';
 
-import { useState } from 'react';
-
-// import { db } from '../firebase';
-// import { collection, doc, updateDoc, onSnapshot } from 'firebase/firestore';
-
-// Styled component for the container div, using Flexbox to align items horizontally
 const HeaderContainer = styled.div`
   display: flex;
   align-items: center; /* Vertically aligns the logo and text */
   gap: 12px;
 `;
 
-// const [showDetails, setShowDetails] = useState(false); // State to control showing details
-
-// const handleToggleDetails = () => {
-//   setShowDetails(prev => !prev); // Toggle the state
-// };
-
-const Header = ({ mode, setMode , onToggleDetails, showDetails }) => {
+const Header = ({ mode, setMode, onToggleDetails, showDetails }) => {
   return (
     <div>
       <HeaderContainer >
@@ -42,9 +30,12 @@ const Header = ({ mode, setMode , onToggleDetails, showDetails }) => {
         >
           Edit Mode
         </button>
-        
-        <button onClick={onToggleDetails}>
-        {showDetails ? 'Hide Details' : 'Show Details'}
+
+        <button 
+        onClick={onToggleDetails} 
+        className={"ui"}          
+        >
+          {showDetails ? 'Hide Details' : 'Show Details'}
         </button>
 
       </div>

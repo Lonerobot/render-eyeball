@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import TileGrid from './components/TileGrid';
+import KeyLabel from './components/KeyLabel';
 
 // import HeaderGrid from './components/HeaderGrid';
 
@@ -82,20 +83,16 @@ const App = () => {
       <Header mode={mode} setMode={setMode} onToggleDetails={handleToggleDetails} showDetails={showDetails} />
       <TileGrid computers={computers} mode={mode} toggleStatus={toggleStatus} showDetails={showDetails} />
     </div>
-
-
-      {/* <Header mode={mode} setMode={setMode} />
-      <TileGrid computers={computers} mode={mode} toggleStatus={toggleStatus} /> */}
       
-      {/* <HeaderGrid computers={computers} mode={mode} toggleStatus={toggleStatus} ></HeaderGrid> */}
-      
-      <div className="div-layout-top">  
+      <div className="div-layout-bottom">  
       {mode === 'edit' && (
         <button className='view action' onClick={() => setAllToOccupied()}>          
           Set All Occupied
         </button>
         )}            
       <ModifiedLabel /> 
+      <KeyLabel />
+
       </div>
      </div>
 

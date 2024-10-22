@@ -45,6 +45,12 @@
     padding-bottom: 16px;
   }
 
+  .div-layout-bottom {
+    display: flex;    
+    justify-content: space-between; 
+    align-items: center;
+  }
+
   .div-layout-flow {
     display: flex;   
     gap: 10px;   
