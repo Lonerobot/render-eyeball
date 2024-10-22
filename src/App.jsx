@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import TileGrid from './components/TileGrid';
 
+// import HeaderGrid from './components/HeaderGrid';
+
 import ModifiedLabel from './components/ModifiedLabel';
 import HeaderLogo from './components/ImageComponent';
 
@@ -67,12 +69,27 @@ const App = () => {
       }
     };
   
+    const [showDetails, setShowDetails] = useState(false); // State to control showing details
+
+    const handleToggleDetails = () => {
+      setShowDetails(prev => !prev); // Toggle the state
+    };
 
   return (
     <div className="App"> 
-      <Header mode={mode} setMode={setMode} />
-      <TileGrid computers={computers} mode={mode} toggleStatus={toggleStatus} />
-      <div className="div-layout-flow">  
+
+    <div>
+      <Header mode={mode} setMode={setMode} onToggleDetails={handleToggleDetails} showDetails={showDetails} />
+      <TileGrid computers={computers} mode={mode} toggleStatus={toggleStatus} showDetails={showDetails} />
+    </div>
+
+
+      {/* <Header mode={mode} setMode={setMode} />
+      <TileGrid computers={computers} mode={mode} toggleStatus={toggleStatus} /> */}
+      
+      {/* <HeaderGrid computers={computers} mode={mode} toggleStatus={toggleStatus} ></HeaderGrid> */}
+      
+      <div className="div-layout-top">  
       {mode === 'edit' && (
         <button className='view action' onClick={() => setAllToOccupied()}>          
           Set All Occupied

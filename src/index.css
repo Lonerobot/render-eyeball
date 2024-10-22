@@ -9,14 +9,26 @@
   font-family: 'Roboto';
   src: url('./fonts/Roboto-Bold.ttf') format('truetype');
   font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./fonts/Orbitron-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('./fonts/Orbitron-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
 }
 
 :root {
   font-family: 'Roboto', sans-serif;
-  font-weight: 200;
   color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87); */
   background-color: #242424;
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -29,7 +41,7 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: 300;
   color: #646cff;
   text-decoration: inherit;
 }
@@ -47,12 +59,14 @@ body {
   }
 
 h1 {
-  font-size: 2.2em;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.2em;
   line-height: 1.1;
   color: wheat;
 }
 
 button {
+  font-family: 'Orbitron', sans-serif;
   border-radius: 8px;  
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -61,10 +75,12 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-  
+  border: none;
+  outline:none
 }
 button:hover {
   border-color: #646cff;
+  color: yellowgreen;
 }
 button:focus,
 button:focus-visible {

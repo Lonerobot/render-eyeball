@@ -3,6 +3,8 @@ import ImageComponent from './ImageComponent';
 import Logo from '../assets/eyeball.png'
 import styled from 'styled-components';
 
+import { useState } from 'react';
+
 // import { db } from '../firebase';
 // import { collection, doc, updateDoc, onSnapshot } from 'firebase/firestore';
 
@@ -13,7 +15,13 @@ const HeaderContainer = styled.div`
   gap: 12px;
 `;
 
-const Header = ({ mode, setMode }) => {
+// const [showDetails, setShowDetails] = useState(false); // State to control showing details
+
+// const handleToggleDetails = () => {
+//   setShowDetails(prev => !prev); // Toggle the state
+// };
+
+const Header = ({ mode, setMode , onToggleDetails, showDetails }) => {
   return (
     <div>
       <HeaderContainer >
@@ -21,7 +29,7 @@ const Header = ({ mode, setMode }) => {
         <h1>Render Eyeball</h1>
       </HeaderContainer>
 
-      <div className="div-layout-side" >
+      <div className="div-layout-top" >
         <button
           onClick={() => setMode('view')}
           className={mode === 'view' ? 'active' : ''}
@@ -34,6 +42,11 @@ const Header = ({ mode, setMode }) => {
         >
           Edit Mode
         </button>
+        
+        <button onClick={onToggleDetails}>
+        {showDetails ? 'Hide Details' : 'Show Details'}
+        </button>
+
       </div>
     </div>
   );
