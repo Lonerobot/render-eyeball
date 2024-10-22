@@ -1,39 +1,53 @@
 import React from 'react';
 import './IconLabel.css';
 
-import RamIcon from '../assets/ram.svg';
-import CpuIcon from '../assets/cpu.svg';
-import GpuIcon from '../assets/gpu.svg';
+import CpuIcon from '../assets/CpuIcon';
+import GpuIcon from '../assets/GpuIcon';
+import RamIcon from '../assets/RamIcon';
+
+import styled from 'styled-components';
+
+// Define the styled span
+const StyledSpan = styled.span`
+  color: ${(props) => props.color || 'black'}; // Fallback to black if no color is passed
+  font-size: 10px;
+  margin-left: 10px;
+`;
+
+const StyledDiv = styled.div`
+    display: flex;
+    align-items: center;
+    text-align: left;
+`;
 
 function convertMBtoGB(mb) {
-    // Convert MB to GB and round to the nearest whole number
-    const gb = Math.round(mb / 1024);
-    
-    // Return the value with "GB" appended
-    return `${gb} GB`;
-  }
+  // Convert MB to GB and round to the nearest whole number
+  const gb = Math.round(mb / 1024);
 
-const iconMap = {
-    cpu: { icon: <img src={CpuIcon} alt="CPU" />, label: 'CPU' },
-    ram: { icon: <img src={RamIcon} alt="RAM" />, label: 'RAM' },
-    gpu: { icon: <img src={GpuIcon} alt="GPU" />, label: 'GPU' },
-    // Add more types if needed
-  };
-
-const IconLabel = ({ type, data }) => {
-const { icon, label } = iconMap[type] || { icon: '❓', label: 'Unknown' };
-
-if ( type === "ram" ) {
-    data = convertMBtoGB(data)
+  // Return the value with "GB" appended
+  return `${gb} GB`;
 }
 
-return (
-    <div className="icon-label">
-      <span className="icon">{icon}</span>
-      <span className="label">{`${label}: ${data}`}</span>
-    </div>
-);
+const IconLabel = ({ type, color, data }) => {
+
+  const iconMap = {
+    cpu: { icon: <CpuIcon color={color} size={20} />, label: 'CPU' },
+    ram: { icon: <RamIcon color={color} size={20} />, label: 'RAM' },
+    gpu: { icon: <GpuIcon color={color} size={20} />, label: 'GPU' },
+  };
+
+  const { icon, label } = iconMap[type] || { icon: '❓', label: 'Unknown' };
+
+  if (type === "ram") {
+    data = convertMBtoGB(data)
+  }
+
+  return (
+    <StyledDiv>
+      {icon}
+      <StyledSpan color={color} >{`${label}: ${data}`}</StyledSpan>
+    </StyledDiv>
+  );
 };
 
 export default IconLabel;
-  

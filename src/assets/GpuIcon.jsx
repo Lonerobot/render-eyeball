@@ -1,9 +1,16 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 512 512" xml:space="preserve">
-<g>
+import React from 'react';
+
+const GpuIcon = ({ color = 'currentColor', size = 24 }) => (
+  <svg
+    stroke={color}
+    fill={color}
+    strokeWidth="0"
+    viewBox="0 0 512 512"
+    height={size} // Use the size prop for height
+    width={size}  // Use the size prop for width
+    xmlns="http://www.w3.org/2000/svg"
+  >
+
 	<path d="M480.003,128H48c0-22.056-17.944-40-40-40c-4.418,0-8,3.582-8,8s3.582,8,8,8c13.234,0,24,10.766,24,24v288
 		c0,4.418,3.582,8,8,8s8-3.582,8-8v-8h16.01C77.238,408,88,397.238,88,384.01V384h392.003C497.646,384,512,369.646,512,352.003
 		V159.997C512,142.354,497.646,128,480.003,128z M496,352.003c0,8.821-7.176,15.997-15.997,15.997H80c-4.418,0-8,3.582-8,8v8.01
@@ -38,5 +45,9 @@
 	<path d="M432,224h-24c-4.418,0-8,3.582-8,8s3.582,8,8,8h24c4.418,0,8-3.582,8-8S436.418,224,432,224z"/>
 	<path d="M432,248h-24c-4.418,0-8,3.582-8,8s3.582,8,8,8h24c4.418,0,8-3.582,8-8S436.418,248,432,248z"/>
 	<path d="M432,272h-24c-4.418,0-8,3.582-8,8s3.582,8,8,8h24c4.418,0,8-3.582,8-8S436.418,272,432,272z"/>
-</g>
-</svg>
+
+  </svg>
+);
+
+export default GpuIcon
+

@@ -65,6 +65,11 @@ h1 {
   color: wheat;
 }
 
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.0em;
+}
+
 button {
   font-family: 'Orbitron', sans-serif;
   border-radius: 8px;  

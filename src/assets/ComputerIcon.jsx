@@ -17,4 +17,5 @@ const ComputerIcon = ({ color = 'currentColor', size = 24 }) => (
   </svg>
 );
 
-export default ComputerIcon;
+export default ComputerIcon
+
