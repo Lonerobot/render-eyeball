@@ -9,10 +9,12 @@ header {
 button.active {
   background-color: #4caf50;
   color: white;
+  outline:none
 }
 
 button.action {
   background-color:#CCCC33;
-  color:#333333
+  color:#333333;
+  outline:none
 }
 
