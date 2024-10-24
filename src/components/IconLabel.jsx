@@ -1,5 +1,4 @@
 import React from 'react';
-import './IconLabel.css';
 
 import CpuIcon from '../assets/CpuIcon';
 import GpuIcon from '../assets/GpuIcon';

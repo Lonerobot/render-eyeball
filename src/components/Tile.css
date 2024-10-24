@@ -1,13 +1,11 @@
 .tile {
-    padding: 10px;
+    padding: 4px;    
     border: none;
     border-radius: 10px;
     color: rgb(27, 27, 27); 
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    /* max-width: 300px;
-    max-height: 200px; */
   }
   
   .tile.free {
@@ -25,16 +23,15 @@
     opacity: 0.85;
   }
 
-  .icon-main {
-    width: 40px; /* Adjust size as needed */
+  /* .icon-main {
+    width: 40px; 
     height: 40px;
-  }
+  } */
 
   .div-layout-side {
     display: flex;    
     gap: 10px; 
     align-items: center;
-    /* padding-bottom: 8px; */
     justify-content: space-around
   }
 

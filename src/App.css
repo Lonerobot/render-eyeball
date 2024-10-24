@@ -1,10 +1,14 @@
-.App {
+/* .App {
   text-align: left;
-}
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  right: 10%;
+} */
 
-header {
+/* header {
   margin-bottom: 20px;
-}
+} */
 
 button.ui {
   background-color:#485848;
