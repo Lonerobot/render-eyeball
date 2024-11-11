@@ -1,8 +1,8 @@
 import React from 'react';
 
-import CpuIcon from '../assets/CpuIcon';
-import GpuIcon from '../assets/GpuIcon';
-import RamIcon from '../assets/RamIcon';
+import { CpuIcon } from '../assets/icons';
+import { GpuIcon } from '../assets/icons';
+import { RamIcon } from '../assets/icons';
 
 import styled from 'styled-components';
 

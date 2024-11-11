@@ -2,13 +2,10 @@ import React from 'react';
 import './Tile.css';
 import IconLabel from './IconLabel';
 
-// import computerIcon from '../assets/computerA.svg';
-
 import { COLORS } from '../theme';
-import ComputerIcon from '../assets/ComputerIcon.jsx';
-
+import { ComputerIcon } from '../assets/icons.jsx';
 import { doc, updateDoc, serverTimestamp } from "firebase/firestore";
-import { db } from "../firebase.js";
+import { db } from "../config/firebase.js";
 
 
 const Tile = ({ computer, mode, toggleStatus, showDetails }) => {

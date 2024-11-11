@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { doc, onSnapshot  } from "firebase/firestore";
-import { db } from "../firebase.js"; 
+import { db } from "../config/firebase.js"; 
 
 import styled from 'styled-components';
 
