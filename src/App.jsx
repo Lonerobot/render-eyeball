@@ -6,14 +6,50 @@ import ModifiedLabel from "./components/ModifiedLabel";
 
 import "./App.css";
 
-import { db } from "./firebase";
+import { db } from "./config/firebase";
 import { collection, doc, updateDoc, onSnapshot } from "firebase/firestore";
 
 import styled from "styled-components";
 
+import { COLORS } from "./theme";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const AppDiv = styled.div`
+  text-align: left;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  right: 10%;
+`;
+
+const IconButton = styled.button`
+  display: flex;
+  align-items: center; /* Vertically aligns the logo and text */
+  gap: 12px;
+  padding: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 300px;
+  justify-content: space-evenly;
+  background-color: ${COLORS.primary};
+  color: ${COLORS.textPrimary};
+  width: 220px;
+  height: 40px;
+`;
+
 const App = () => {
   const [mode, setMode] = useState("view"); // 'view' or 'edit'
   const [computers, setComputers] = useState([]);
+  const [showDetails, setShowDetails] = useState(false); // State to control showing details
+  const [currentUser, setCurrentUser] = useState("");
 
   useEffect(() => {
     // Subscribe to the 'computers' collection
@@ -40,76 +76,46 @@ const App = () => {
     }
   };
 
-  // Set all computers to "occupied"
-  const setAllToOccupied = async () => {
-    try {
-      const batch = computers.map(async (computer) => {
-        const docRef = doc(db, "computers", computer.id);
-        await updateDoc(docRef, { status: "occupied" });
-      });
-      await Promise.all(batch);
-      console.log("All computers set to occupied");
-    } catch (error) {
-      console.error("Error setting all to occupied:", error);
-    }
-  };
-
-  // Set all computers to "free"
-  const setAllToFree = async () => {
-    try {
-      const batch = computers.map(async (computer) => {
-        const docRef = doc(db, "computers", computer.id);
-        await updateDoc(docRef, { status: "free" });
-      });
-      await Promise.all(batch);
-      console.log("All computers set to free");
-    } catch (error) {
-      console.error("Error setting all to free:", error);
-    }
-  };
-
-  const [showDetails, setShowDetails] = useState(false); // State to control showing details
-
   const handleToggleDetails = () => {
     setShowDetails((prev) => !prev); // Toggle the state
   };
 
-  const AppDiv = styled.div`
-    text-align: left;
-    position: absolute;
-    top: 4%;
-    left: 10%;
-    right: 10%;
-  `;
-
   return (
-    <div className="App">
-      <AppDiv>
-        <div>
-          <Header
-            mode={mode}
-            setMode={setMode}
-            onToggleDetails={handleToggleDetails}
-            showDetails={showDetails}
-          />
-                    <TileGrid
-            computers={computers}
-            mode={mode}
-            toggleStatus={toggleStatus}
-            showDetails={showDetails}
-          />
-        </div>
-        <div className="div-layout-bottom">
-          {mode === "edit" && (
-            <button className="view action" onClick={() => setAllToOccupied()}>
-              Set All Occupied
-            </button>
-          )}
-          <ModifiedLabel />
-          <KeyLabel />
-        </div>
-      </AppDiv>
-    </div>
+
+      <div className="App">
+        <ToastContainer 
+        position="top-right" 
+        autoClose={2000} 
+        hideProgressBar={false} 
+        newestOnTop={false} 
+        closeOnClick 
+        rtl={false}        
+        draggable 
+        theme="dark" 
+      />
+        <AppDiv>
+          <div>
+            <Header
+              mode={mode}
+              setMode={setMode}
+              onToggleDetails={handleToggleDetails}
+              showDetails={showDetails}
+            />
+
+            <TileGrid
+              computers={computers}
+              mode={mode}
+              toggleStatus={toggleStatus}
+              showDetails={showDetails}
+            />
+          </div>
+          <div className="div-layout-bottom">
+            <ModifiedLabel />
+            <KeyLabel />
+          </div>
+        </AppDiv>
+      </div>
+
   );
 };
 

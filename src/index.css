@@ -28,8 +28,7 @@
 
 :root {
   font-family: 'Roboto', sans-serif;
-  color-scheme: light dark;
-  background-color: #242424;
+  color-scheme: light dark;  
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
@@ -58,12 +57,12 @@ body {
   background-color: #242424;
   }
 
-h1 {
+/* h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 3.2em;
   line-height: 1.1;
   color: wheat;
-}
+} */
 
 h3 {
   font-family: 'Orbitron', sans-serif;
