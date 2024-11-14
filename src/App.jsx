@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Header from "./components/Header";
-import TileGrid from "./components/TileGrid";
-import KeyLabel from "./components/KeyLabel";
-import ModifiedLabel from "./components/ModifiedLabel";
+// App.js
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import SignIn from "./pages/SignIn";
+import PrivateRoute from "./pages/PrivateRoute"; // Import the PrivateRoute
 
-import "./App.css";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { db } from "./config/firebase";
 import { collection, doc, updateDoc, onSnapshot } from "firebase/firestore";
@@ -117,6 +119,6 @@ const App = () => {
       </div>
 
   );
-};
+}
 
 export default App;
