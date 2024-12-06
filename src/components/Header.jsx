@@ -36,6 +36,7 @@ const LayoutTop = styled.div`
   align-items: center;
   padding-bottom: 16px;
   justify-content: space-between;
+
 `;
 
 const LayoutIntraDiv = styled.div`
@@ -108,7 +109,7 @@ const Header = ({ mode, setMode, onToggleDetails, showDetails }) => {
       toast(`🦄 Welcome ${firstName}!`, {
         style: {
           backgroundColor: COLORS.toastBackground,
-          colorProgressDark : green,
+          colorProgressDark : COLORS.toastProgress,
           color: COLORS.toastText,
         },
         progressStyle: { backgroundColor: COLORS.backgroundFree }, // Change the progress bar color
@@ -175,14 +176,21 @@ const Header = ({ mode, setMode, onToggleDetails, showDetails }) => {
       </HeaderContainer>
 
       <LayoutTop>
-        <button onClick={onToggleDetails} className={"ui"}>
-          {showDetails ? "Hide Details" : "Show Details"}
-        </button>
+
+
 
         <IconButton className={"ui"} onClick={handleAuthClick}>
           <GoogleIcon color={COLORS.backgroundFree} size={24}></GoogleIcon>
           {user ? "Logout" : "Login with Google"}
         </IconButton>
+
+        {user && (
+        <button onClick={onToggleDetails} className={"ui"}>
+          {showDetails ? "Hide Details" : "Show Details"}
+        </button>
+           )}
+
+
       </LayoutTop>
     </div>
   );

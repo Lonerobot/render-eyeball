@@ -1,25 +1,23 @@
 // App.js
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import PrivateRoute from "./pages/PrivateRoute"; // Import the PrivateRoute
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import { db } from "./config/firebase";
 import { collection, doc, updateDoc, onSnapshot } from "firebase/firestore";
-
 import styled from "styled-components";
-
 import { COLORS } from "./theme";
 
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import Header from "./components/Header";
+import TileGrid from "./components/TileGrid";
+import ModifiedLabel from "./components/ModifiedLabel";
+import KeyLabel from "./components/KeyLabel";
 
 const AppDiv = styled.div`
   text-align: left;

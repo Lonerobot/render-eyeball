@@ -9,4 +9,5 @@ export const COLORS = {
     backgroundOccupied : '#CCCC33',   
     toastBackground : "#3a3a3a",
     toastText : "wheat",
+    toastProgress : "wheat",
   };
